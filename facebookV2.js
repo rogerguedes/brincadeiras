@@ -1,7 +1,7 @@
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange=function(){
 	if(this.readyState == 4){
-    var listaDePessoas = this.response.match(/\"list\":[\[\"0-9\,\]]+/)[0];
+    var listaDePessoas = this.response.match(/\"list\":[\[\"0-9\,\]-]+/)[0];
 		idDasPessoas = listaDePessoas.match(/\d+/g);
 		console.log(idDasPessoas);
 		
